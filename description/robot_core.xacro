@@ -38,6 +38,12 @@
             </geometry>
             <material name="white"/>
         </visual>
+        <collision>
+            <origin xyz="0.15 0 0.75"/>
+            <geometry>
+                <box size= "0.3 0.3 0.15"/>
+            </geometry>
+        </collision>
     </link>
     <!-- LEFT WHEEL LNKK-->
     <joint name="left_wheel_joint" type="continuous">
@@ -53,6 +59,11 @@
             </geometry>
             <material name ="blue"/>
         </visual>
+        <colision>
+            <geometry>
+                 <cylinder radius ="0.05" length="0.04"/>
+            </geometry>
+        </collision>
 
 
     </link>
@@ -72,6 +83,11 @@
             </geometry>
             <material name ="blue"/>
         </visual>
+        <collision>
+            <geometry>
+                 <cylinder radius ="0.05" length="0.04"/>
+            </geometry>
+        </collision>
         
 
     </link>
@@ -88,7 +104,12 @@
             <geometry>
                 <sphere radius= "0.05"/>
             </geometry>
+              <material name="black"/>
         </visual>
-        <material name="black"/>
+        <collsion>
+            <geometry>
+                <sphere radius= "0.05"/>
+            </geometry>
+        </collision>
     </link>
 </robot>
